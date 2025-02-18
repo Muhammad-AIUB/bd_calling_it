@@ -11,7 +11,7 @@
     <!-- <div class="container"></div> -->
 
     <!-- navbar section start -->
-    <nav class="bg-gray-800 p-4">
+    <nav class="bg-[#02060A] p-4">
       <div class="container mx-auto flex justify-between items-center">
         <!-- Logo -->
         <a href="#" class="flex items-center">
@@ -20,12 +20,14 @@
 
         <!-- Desktop Menu -->
         <div class="hidden md:flex items-center space-x-6">
-          <img class="h-6 w-10" src="/images/flag.png" alt="flag" />
+          <img class="h-10 w-10" src="/images/flag.png" alt="flag" />
           <a
             href="#"
-            class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md text-white font-medium"
-            >Join Us On Telegram</a
+            class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md text-white font-medium flex items-center gap-2"
           >
+            <img src="/images/Teligram.png" alt="Telegram" class="w-5 h-5" />
+            Join Us On Telegram
+          </a>
         </div>
 
         <!-- Mobile Menu Button -->
@@ -50,7 +52,7 @@
       <!-- Mobile Menu -->
       <div
         id="mobile-menu"
-        class="hidden md:hidden flex flex-col items-center space-y-4 bg-gray-700 p-4"
+        class="hidden md:hidden flex flex-col items-center space-y-4 bg-[#02060A] p-4"
       >
         <img class="h-6 w-10" src="/images/flag.png" alt="flag" />
         <a
@@ -63,33 +65,52 @@
     <!-- navbar section end -->
 
     <!-- Hero Section -->
-    <section class="hero-section h-[calc(100vh-95px)]">
-      <div class="overlay"></div>
+    <section
+      class="relative min-h-screen flex flex-col-reverse sm:flex-row items-center justify-center sm:justify-between px-6 md:px-20 overflow-hidden bg-cover bg-center"
+      style="background-image: url('/images/Hero-Bg.png')"
+    >
+      <!-- Background Overlay -->
+      <div class="absolute inset-0 bg-black opacity-40 z-0"></div>
 
-      <!-- left side -->
-      <div class="content">
-        <h4 class="tagline">Let Your Money Work for You</h4>
-        <h2 class="headline">
-          <span class="highlight"
+      <!-- Left Content -->
+      <div class="relative z-10 text-center sm:text-left max-w-xl flex-1">
+        <h4 class="text-lg text-blue-400 font-semibold">
+          Let Your Money Work for You
+        </h4>
+        <h2 class="text-2xl md:text-4xl font-bold mt-4 leading-snug">
+          <span class="text-blue-500"
             >If there was a way to grow your investments by 40%</span
           >
           in 90 days without lifting a finger, would you?
         </h2>
-        <p class="description">
+        <p class="text-gray-300 mt-4 text-lg">
           Automated trading made simple. Start with just $500 and experience up
           to 40% growth in 90 days — guaranteed.
         </p>
 
-        <div class="buttons">
-          <a href="#" class="btn primary">Start Your Free Trial</a>
-          <a href="#" class="btn secondary">Join Free Telegram</a>
+        <!-- Buttons -->
+        <div
+          class="flex flex-col sm:flex-row mt-6 space-y-4 sm:space-y-0 sm:space-x-4"
+        >
+          <a
+            href="#"
+            class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg text-white font-medium transition duration-300"
+          >
+            Start Your Free Trial
+          </a>
+          <a
+            href="#"
+            class="bg-gray-700 hover:bg-gray-600 px-6 py-3 rounded-lg text-white font-medium transition duration-300"
+          >
+            Join Free Telegram
+          </a>
         </div>
       </div>
 
-      <!-- right side -->
-      <div class="image-container">
+      <!-- Right Image -->
+      <div class="relative z-10 flex-1 flex justify-center">
         <img
-          class="image"
+          class="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl h-[250px] sm:h-auto object-contain"
           src="/images/personlaptop.png"
           alt="Person using laptop"
         />
@@ -99,33 +120,35 @@
 
     <!-- Offer will end section start -->
     <section
-      class="offer py-4 mx-auto max-w-6xl bg-[#000D3A66] my-10 text-white px-6 rounded-lg border border-[#1E3A8A] flex items-center justify-between"
+      class="offer py-6 mx-auto max-w-6xl bg-[#000D3A66] my-10 text-white px-6 rounded-lg border border-[#1E3A8A] flex flex-col md:flex-row items-center justify-between text-center md:text-left gap-y-4 md:gap-y-0"
     >
       <!-- Left Side -->
-      <div class="flex items-center space-x-4">
+      <div
+        class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4"
+      >
         <span class="text-5xl font-bold">20%</span>
-        <div class="text-lg">
+        <div class="text-lg leading-tight">
           <p>Growth in 30 Days |</p>
           <p>Established 5+ Years</p>
         </div>
       </div>
 
       <!-- Right Side: Timer -->
-      <div class="text-right">
-        <p class="text-2xl font-semibold">OFFER WILL END IN</p>
-        <div class="flex space-x-2 mt-1">
+      <div class="flex flex-col items-center md:items-end">
+        <p class="text-xl md:text-2xl font-semibold">OFFER WILL END IN</p>
+        <div class="flex space-x-2 mt-2 justify-center md:justify-end">
           <div
-            class="bg-[#0A1F4D] px-3 py-1 text-2xl font-bold rounded-md border border-[#1E3A8A]"
+            class="bg-[#0A1F4D] px-4 py-2 text-2xl font-bold rounded-md border border-[#1E3A8A]"
           >
             <span id="hours">23</span>H
           </div>
           <div
-            class="bg-[#0A1F4D] px-3 py-1 text-2xl font-bold rounded-md border border-[#1E3A8A]"
+            class="bg-[#0A1F4D] px-4 py-2 text-2xl font-bold rounded-md border border-[#1E3A8A]"
           >
             <span id="minutes">20</span>M
           </div>
           <div
-            class="bg-[#0A1F4D] px-3 py-1 rounded-md border text-2xl font-bold border-[#1E3A8A]"
+            class="bg-[#0A1F4D] px-4 py-2 text-2xl font-bold rounded-md border border-[#1E3A8A]"
           >
             <span id="seconds">09</span>S
           </div>
@@ -275,87 +298,98 @@
     <!-- Offer will end end -->
 
     <!-- Why bg start -->
-    <section class="bg-[#0A0F1B] text-white py-16 px-6 md:px-16 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-6">
-        Why Hundreds Trust LTI <br />
-        <span class="text-blue-400">Investments to Grow</span> Their Wealth
-      </h2>
+    <section
+      class="relative bg-[#0A0F1B] text-white py-16 px-6 md:px-16 text-center bg-cover bg-center"
+      style="background-image: url('/images/Why-Bg.png')"
+    >
+      <!-- Background Overlay -->
+      <div class="absolute inset-0 bg-black opacity-50"></div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-        <!-- Automated Trading Card -->
-        <div
-          class="bg-[#062E52] p-6 rounded-lg border border-blue-400 shadow-lg"
-        >
-          <img
-            src="/images/Icons/roundtickicon.png"
-            alt="Trading"
-            class="w-12 h-12 mx-auto mb-3"
-          />
-          <h4 class="text-lg font-semibold">Automated Trading for Beginners</h4>
-          <p class="text-gray-300 text-sm mt-2">
-            No manual trading required — focus on your goals while we do the
-            rest.
-          </p>
-        </div>
+      <div class="relative z-10">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Why Hundreds Trust LTI <br />
+          <span class="text-blue-400">Investments to Grow</span> Their Wealth
+        </h2>
 
-        <!-- Guaranteed Results Card -->
-        <div
-          class="bg-[#062E52] p-6 rounded-lg border border-blue-400 shadow-lg"
-        >
-          <img
-            src="/images/Icons/tickicon.png"
-            alt="Guaranteed"
-            class="w-12 h-12 mx-auto mb-3"
-          />
-          <h4 class="text-lg font-semibold">Guaranteed Results</h4>
-          <p class="text-gray-300 text-sm mt-2">
-            Up to 40% growth in 90 days or your year is free.
-          </p>
-        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <!-- Automated Trading Card -->
+          <div
+            class="bg-[#062E52] p-6 rounded-lg border border-blue-400 shadow-lg"
+          >
+            <img
+              src="/images/Icons/roundtickicon.png"
+              alt="Trading"
+              class="w-12 h-12 mx-auto mb-3"
+            />
+            <h4 class="text-lg font-semibold">
+              Automated Trading for Beginners
+            </h4>
+            <p class="text-gray-300 text-sm mt-2">
+              No manual trading required — focus on your goals while we do the
+              rest.
+            </p>
+          </div>
 
-        <!-- Transparent and Flexible Card -->
-        <div
-          class="bg-[#062E52] p-6 rounded-lg border border-blue-400 shadow-lg"
-        >
-          <img
-            src="/images/Icons/headphoneicon.png"
-            alt="Transparent"
-            class="w-12 h-12 mx-auto mb-3"
-          />
-          <h4 class="text-lg font-semibold">Transparent and Flexible</h4>
-          <p class="text-gray-300 text-sm mt-2">
-            No hidden fees. Pay only after you profit.
-          </p>
-        </div>
-      </div>
+          <!-- Guaranteed Results Card -->
+          <div
+            class="bg-[#062E52] p-6 rounded-lg border border-blue-400 shadow-lg"
+          >
+            <img
+              src="/images/Icons/tickicon.png"
+              alt="Guaranteed"
+              class="w-12 h-12 mx-auto mb-3"
+            />
+            <h4 class="text-lg font-semibold">Guaranteed Results</h4>
+            <p class="text-gray-300 text-sm mt-2">
+              Up to 40% growth in 90 days or your year is free.
+            </p>
+          </div>
 
-      <!-- Support Card -->
-      <div
-        class="mt-6 bg-[#062E52] p-6 rounded-lg border border-blue-400 shadow-lg max-w-5xl mx-auto"
-      >
-        <div class="flex items-center space-x-4">
-          <img
-            src="/images/Icons/lathiicon.png"
-            alt="Support"
-            class="w-12 h-12"
-          />
-          <div class="text-left">
-            <h4 class="text-lg font-semibold">24/7 Support Staff</h4>
-            <p class="text-gray-300 text-sm">
-              Clients have their very own support line accessible both by chat
-              and direct calls. Clients are always supported to ensure they feel
-              confident in the team and their trading positions.
+          <!-- Transparent and Flexible Card -->
+          <div
+            class="bg-[#062E52] p-6 rounded-lg border border-blue-400 shadow-lg"
+          >
+            <img
+              src="/images/Icons/headphoneicon.png"
+              alt="Transparent"
+              class="w-12 h-12 mx-auto mb-3"
+            />
+            <h4 class="text-lg font-semibold">Transparent and Flexible</h4>
+            <p class="text-gray-300 text-sm mt-2">
+              No hidden fees. Pay only after you profit.
             </p>
           </div>
         </div>
-      </div>
 
-      <!-- Closing Statement -->
-      <p class="mt-8 text-2xl text-gray-300 max-w-2xl mx-auto">
-        If there was a way to grow your investments effortlessly while
-        reclaiming your time, would you?
-      </p>
+        <!-- Support Card -->
+        <div
+          class="mt-6 bg-[#062E52] p-6 rounded-lg border border-blue-400 shadow-lg max-w-5xl mx-auto"
+        >
+          <div class="flex items-center space-x-4">
+            <img
+              src="/images/Icons/lathiicon.png"
+              alt="Support"
+              class="w-12 h-12"
+            />
+            <div class="text-left">
+              <h4 class="text-lg font-semibold">24/7 Support Staff</h4>
+              <p class="text-gray-300 text-sm">
+                Clients have their very own support line accessible both by chat
+                and direct calls. Clients are always supported to ensure they
+                feel confident in the team and their trading positions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Closing Statement -->
+        <p class="mt-8 text-2xl text-gray-300 max-w-2xl mx-auto">
+          If there was a way to grow your investments effortlessly while
+          reclaiming your time, would you?
+        </p>
+      </div>
     </section>
+
     <!-- Why bg end -->
 
     <!-- Monthly returns start -->
@@ -467,57 +501,66 @@
     <!-- Client says end -->
 
     <!-- Real results start -->
-    <section class="text-white py-16 text-center">
-      <h2 class="text-3xl font-semibold">
-        What Our <span class="text-blue-400">Clients Say</span>
-      </h2>
+    <section
+      class="relative text-white py-16 text-center bg-cover bg-center"
+      style="background-image: url('/images/ResultsBg.png')"
+    >
+      <!-- Background Overlay -->
+      <div class="absolute inset-0 bg-black opacity-50"></div>
 
-      <div class="mt-8 grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
-        <!-- Testimonial Card 1 -->
+      <div class="relative z-10">
+        <h2 class="text-3xl font-semibold">
+          What Our <span class="text-blue-400">Clients Say</span>
+        </h2>
 
-        <!-- Testimonial Card 3 -->
-        <div class="pb-4 text-center">
-          <div class="flex justify-center">
-            <img src="/images/ss1.png" alt="User" class="rounded-md" />
+        <div
+          class="mt-8 grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto"
+        >
+          <!-- Testimonial Card 1 -->
+          <div class="pb-4 text-center">
+            <div class="flex justify-center">
+              <img src="/images/ss1.png" alt="User" class="rounded-md" />
+            </div>
+            <h3 class="mt-4 text-xl font-bold">
+              Include screenshots trading account growth
+            </h3>
           </div>
-          <h3 class="mt-4 text-xl font-bold">
-            Include screenshots trading account growth
-          </h3>
-        </div>
-        <!-- Testimonial Card 3 -->
-        <div class="pb-4 text-center">
-          <div class="flex justify-center">
-            <img src="/images/ss2.png" alt="User" class="rounded-md" />
+          <!-- Testimonial Card 2 -->
+          <div class="pb-4 text-center">
+            <div class="flex justify-center">
+              <img src="/images/ss2.png" alt="User" class="rounded-md" />
+            </div>
+            <h3 class="mt-4 text-xl font-bold">
+              Include screenshots of trading growth
+            </h3>
           </div>
-          <h3 class="mt-4 text-xl font-bold">
-            Include screenshots of trading growth
-          </h3>
-        </div>
-        <!-- Testimonial Card 3 -->
-        <div class="pb-4 text-center">
-          <div class="flex justify-center">
-            <img src="/images/ss3.png" alt="User" class="rounded-md" />
+          <!-- Testimonial Card 3 -->
+          <div class="pb-4 text-center">
+            <div class="flex justify-center">
+              <img src="/images/ss3.png" alt="User" class="rounded-md" />
+            </div>
+            <h3 class="mt-4 text-xl font-bold">
+              Include screenshots of trading account
+            </h3>
           </div>
-          <h3 class="mt-4 text-xl font-bold">
-            Include screenshots of trading account
-          </h3>
-        </div>
-        <!-- Testimonial Card 3 -->
-        <div class="pb-4 text-center">
-          <div class="flex justify-center">
-            <img src="/images/ss4.png" alt="User" class="rounded-md" />
+          <!-- Testimonial Card 4 -->
+          <div class="pb-4 text-center">
+            <div class="flex justify-center">
+              <img src="/images/ss4.png" alt="User" class="rounded-md" />
+            </div>
+            <h3 class="mt-4 text-xl font-bold">
+              Include screenshots of trading account
+            </h3>
           </div>
-          <h3 class="mt-4 text-xl font-bold">
-            Include screenshots of trading account
-          </h3>
         </div>
+
+        <p class="mt-12 text-2xl max-w-3xl mx-auto text-gray-300">
+          If there was a way to grow your investments automatically with
+          guaranteed results, would you take the first step?
+        </p>
       </div>
-
-      <p class="mt-12 text-2xl max-w-3xl mx-auto text-gray-300">
-        If there was a way to grow your investments automatically with
-        guaranteed results, would you take the first step?
-      </p>
     </section>
+
     <!-- Real results end -->
 
     <!-- Your benefits start -->
@@ -659,92 +702,100 @@
     <!-- Start earning end -->
 
     <!-- support section start -->
-    <section class="py-16 px-6 max-w-6xl mx-auto">
-      <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
-        <!-- Left Side (Text & Image) -->
-        <div class="space-y-6">
-          <img
-            src="/images/support.png"
-            alt="Headphone"
-            class="w-24 h-24 md:w-32 md:h-32 mx-auto md:mx-0"
-          />
-          <h2 class="text-3xl md:text-4xl font-semibold">
-            Have <span class="text-white">Questions?</span><br />
-            <span class="text-blue-500">Speak to an Expert</span>
-          </h2>
-          <p class="text-gray-300">
-            Get personalized advice from our experts and start your journey to
-            financial growth.
-          </p>
-        </div>
-
-        <!-- Right Side (Form) -->
+    <section
+      class="relative py-16 px-6 mx-auto bg-[url('/images/QuestionsBg.png')] bg-cover bg-center bg-no-repeat"
+    >
+      <div class="max-w-5xl mx-auto">
+        <div class="absolute inset-0 bg-black/50"></div>
         <div
-          class="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-600"
+          class="relative z-10 grid grid-cols-1 md:grid-cols-2 items-center gap-10"
         >
-          <form class="space-y-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <input
-                type="text"
-                placeholder="Full Name"
+          <!-- Left Side (Text & Image) -->
+          <div class="space-y-6">
+            <img
+              src="/images/support.png"
+              alt="Headphone"
+              class="w-24 h-24 md:w-32 md:h-32 mx-auto md:mx-0"
+            />
+            <h2 class="text-3xl md:text-4xl font-semibold text-white">
+              Have <span class="text-blue-400">Questions?</span><br />
+              <span class="text-blue-500">Speak to an Expert</span>
+            </h2>
+            <p class="text-gray-300">
+              Get personalized advice from our experts and start your journey to
+              financial growth.
+            </p>
+          </div>
+
+          <!-- Right Side (Form) -->
+          <div
+            class="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-600 relative z-10"
+          >
+            <form class="space-y-4">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  class="w-full p-3 bg-gray-900 text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="w-full p-3 bg-gray-900 text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <select
+                  class="w-full p-3 bg-gray-900 text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+                  <option>Select Available Date</option>
+                  <option>Tomorrow</option>
+                  <option>Next Week</option>
+                </select>
+                <input
+                  type="tel"
+                  placeholder="Phone Number"
+                  class="w-full p-3 bg-gray-900 text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+              <textarea
+                placeholder="Share Your Message"
+                rows="4"
                 class="w-full p-3 bg-gray-900 text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-              <input
-                type="email"
-                placeholder="Email"
-                class="w-full p-3 bg-gray-900 text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <select
-                class="w-full p-3 bg-gray-900 text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              ></textarea>
+
+              <button
+                class="w-full bg-blue-500 text-white py-3 rounded-md font-semibold hover:bg-blue-600 transition"
               >
-                <option>Select Available Date</option>
-                <option>Tomorrow</option>
-                <option>Next Week</option>
-              </select>
-              <input
-                type="tel"
-                placeholder="Phone Number"
-                class="w-full p-3 bg-gray-900 text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-            <textarea
-              placeholder="Share Your Message"
-              rows="4"
-              class="w-full p-3 bg-gray-900 text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            ></textarea>
+                Book Your Free Consultation
+              </button>
+            </form>
+          </div>
+        </div>
 
-            <button
-              class="w-full bg-blue-500 text-white py-3 rounded-md font-semibold hover:bg-blue-600 transition"
-            >
-              Book Your Free Consultation
-            </button>
-          </form>
-        </div>
-      </div>
-
-      <!-- Pricing Section -->
-      <div
-        class="mt-10 bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-600 flex flex-col md:flex-row justify-between items-center"
-      >
-        <div class="text-center md:text-left">
-          <h3 class="text-lg font-semibold text-gray-300">Trial Period</h3>
-          <p class="text-xl text-white font-bold">$0 upfront</p>
-        </div>
-        <div class="text-center md:text-left">
-          <h3 class="text-lg font-semibold text-gray-300">After Trial</h3>
-          <p class="text-xl text-white font-bold">
-            £40/month or 15% profit split after earning £1,000
-          </p>
-        </div>
-        <button
-          class="mt-4 md:mt-0 bg-blue-500 text-white py-3 px-6 rounded-md font-semibold hover:bg-blue-600 transition"
+        <!-- Pricing Section -->
+        <div
+          class="mt-10 bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-600 flex flex-col md:flex-row justify-between items-center relative z-10"
         >
-          Start Your Free Trial
-        </button>
+          <div class="text-center md:text-left">
+            <h3 class="text-lg font-semibold text-gray-300">Trial Period</h3>
+            <p class="text-xl text-white font-bold">$0 upfront</p>
+          </div>
+          <div class="text-center md:text-left">
+            <h3 class="text-lg font-semibold text-gray-300">After Trial</h3>
+            <p class="text-xl text-white font-bold">
+              £40/month or 15% profit split after earning £1,000
+            </p>
+          </div>
+          <button
+            class="mt-4 md:mt-0 bg-blue-500 text-white py-3 px-6 rounded-md font-semibold hover:bg-blue-600 transition"
+          >
+            Start Your Free Trial
+          </button>
+        </div>
       </div>
     </section>
+
     <!-- support section end -->
 
     <!-- footer start -->
@@ -769,7 +820,7 @@
         </div>
 
         <div class="p-6 rounded-lg">
-          <h2 class="text-xl font-semibold mb-4">Legal</h2>
+          <h2 class="text-xl font-semibold mb-4">Quick Links</h2>
           <ul class="space-y-2">
             <li>
               <a href="#" class="text-blue-600 hover:underline"
@@ -790,7 +841,9 @@
         </div>
 
         <div class="p-6 rounded-lg">
-          <h2 class="text-xl font-semibold mb-4">Community</h2>
+          <h2 class="text-xl font-semibold mb-4">
+            Risk-Free Trading for Beginners
+          </h2>
           <ul class="space-y-2">
             <li>
               <a href="#" class="text-blue-600 hover:underline"
