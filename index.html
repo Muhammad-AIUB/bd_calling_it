@@ -3,70 +3,590 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lifetime Invests</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>LIFETIME INVESTMENTS - Helping Retail Traders Profit</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <!-- Header Section -->
-    <header>
-      <div class="container">
-        <div class="logo">Lifetime Invests</div>
-        <button class="contact-btn">Contact Us</button>
+    <!-- <div class="container"></div> -->
+
+    <!-- navbar section start -->
+    <nav class="nav">
+      <!-- nav left logo -->
+      <img class="h-[60px]" src="/images/logo.png" alt="logo" />
+
+      <!-- nav right : flag & btn -->
+      <div class="nav-right">
+        <img src="/images/flag.png" alt="flag" />
+
+        <div>
+          <a href="#" class="btn primary">Join Us On Telegram</a>
+        </div>
       </div>
-    </header>
+    </nav>
+    <!-- navbar section end -->
 
     <!-- Hero Section -->
-    <section class="hero">
-      < class="container">
-        <h1>Behind LTI the brand, <br />your partner in trading autopilot</h1>
-        <p>
-          We turn uncertainty into certainty—our ethos is simple: Work less and
-          earn</br> more. In 2021, amidst global economic uncertainty, we launched
-          our automated </br>trading system designed to grow your capital. This
-          system runs nonstop, </br>eliminates bad decisions, and maximizes profits
-          while minimizing risk.
+    <section class="hero-section h-[calc(100vh-95px)]">
+      <div class="overlay"></div>
+
+      <!-- left side -->
+      <div class="content">
+        <h4 class="tagline">Let Your Money Work for You</h4>
+        <h2 class="headline">
+          <span class="highlight"
+            >If there was a way to grow your investments by 40%</span
+          >
+          in 90 days without lifting a finger, would you?
+        </h2>
+        <p class="description">
+          Automated trading made simple. Start with just $500 and experience up
+          to 40% growth in 90 days — guaranteed.
         </p>
-      </div>
-    </section>
 
-    <!-- Features Section -->
-    <section class="hero">
-      <div class="container">
-        <h2>Why LTI?</h2>
-        <p>
-            Manual trading is time-consuming and frustrating, especially with delayed </br>signals. That’s why we created an auto trader to make investing efficient and </br> practical, allowing you to earn impressive passive income without taking time</br> out of your day.</br>
-
-The world is shifting from human labor to AI technology, and your money</br> should follow. AI eliminates errors caused by human emotions—issues that</br> 99% of traders face—and streamlines success.</br>
-
-Be on the right side of change.
-        </p>
-      </div>
-    </section>
-
-    <section class="image-section">
-        <div class="container">
-          <img src="s.png" alt="Speak to Our Team Now, Claim Your 100% Deposit Bonus">
+        <div class="buttons">
+          <a href="#" class="btn primary">Start Your Free Trial</a>
+          <a href="#" class="btn secondary">Join Free Telegram</a>
         </div>
-      </section>
+      </div>
 
-    <!-- Form Section -->
-    <section class="form-section">
-      <div class="container">
-        <h2>Get in Touch</h2>
-        <form>
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea placeholder="Your Message" rows="5" required></textarea>
-          <button type="submit">Submit</button>
-        </form>
+      <!-- right side -->
+      <div class="image-container">
+        <img
+          class="image"
+          src="/images/personlaptop.png"
+          alt="Person using laptop"
+        />
       </div>
     </section>
+    <!-- Hero Section -->
 
-    <!-- Footer Section -->
-    <footer>
-      <div class="container">
-        <p>&copy; 2023 Lifetime Invests. All rights reserved.</p>
+    <!-- Offer will end section start -->
+    <section
+      class="offer bg-[#000D3A66] text-white px-4 rounded-lg border border-[#1E3A8A] flex items-center justify-between"
+    >
+      <!-- Left Side -->
+      <div class="flex items-center space-x-4">
+        <span class="text-5xl font-bold">20%</span>
+        <div class="text-lg">
+          <p>Growth in 30 Days |</p>
+          <p>Established 5+ Years</p>
+        </div>
       </div>
-    </footer>
+
+      <!-- Right Side: Timer -->
+      <div class="text-right">
+        <p class="text-2xl font-semibold">OFFER WILL END IN</p>
+        <div class="flex space-x-2 mt-1">
+          <div
+            class="bg-[#0A1F4D] px-3 py-1 rounded-md border border-[#1E3A8A]"
+          >
+            <span class="text-2xl font-bold">23H</span>
+          </div>
+          <div
+            class="bg-[#0A1F4D] px-3 py-1 rounded-md border border-[#1E3A8A]"
+          >
+            <span class="text-2xl font-bold">20M</span>
+          </div>
+          <div
+            class="bg-[#0A1F4D] px-3 py-1 rounded-md border border-[#1E3A8A]"
+          >
+            <span class="text-2xl font-bold">09S</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Offer will end section end -->
+
+    <!-- Wealth Builder section start -->
+    <section class="w-full max-w-4xl mx-auto py-20 text-center">
+      <h2 class="text-3xl font-semibold">
+        Ultimate <span class="text-blue-400">Wealth Builder</span> Offer
+      </h2>
+      <p class="text-gray-400 mt-2 text-sm">
+        We understand trust is earned, not given. That’s why we’re raising the
+        stakes with our boldest offer yet.
+      </p>
+
+      <div
+        class="border border-blue-500 rounded-lg p-10 mt-6 grid grid-cols-1 md:grid-cols-2 gap-10 bg-gray-800"
+      >
+        <!-- Double Your Deposit Guarantee -->
+        <div class="flex space-x-4">
+          <div class="text-left">
+            <h4 class="font-semibold text-lg">Double Your Deposit Guarantee</h4>
+            <p class="text-gray-400 text-sm">
+              Deposit $500, and if your investment doesn’t grow by at least 40%
+              in 90 days, we’ll refund your deposit AND give you an additional
+              $500.
+            </p>
+          </div>
+
+          <img
+            src="/images/Icons/Vector.png"
+            alt="Guarantee"
+            class="w-12 h-12"
+          />
+        </div>
+
+        <!-- Profit First -->
+        <div class="flex space-x-4">
+          <div class="text-left">
+            <h4 class="font-semibold text-lg">Profit First</h4>
+            <p class="text-gray-400 text-sm">
+              Pay later: You won’t owe us a penny until you’ve earned £1,000 in
+              profits. No fees, no surprise charges—just results.
+            </p>
+          </div>
+
+          <img
+            src="/images/Icons/icon1.png"
+            alt="Profit First"
+            class="w-12 h-12"
+          />
+        </div>
+
+        <!-- Zero-Risk Trial -->
+        <div class="flex space-x-4">
+          <div class="text-left">
+            <h4 class="font-semibold text-lg">Zero-Risk Trial</h4>
+            <p class="text-gray-400 text-sm">
+              If you're not satisfied at the end of 90 days, walk away with
+              everything you've earned—no questions asked.
+            </p>
+          </div>
+          <img
+            src="/images/Icons/Group2307.png"
+            alt="Risk Free"
+            class="w-12 h-12"
+          />
+        </div>
+
+        <!-- 100% Deposit Bonus -->
+        <div class="flex space-x-4">
+          <div class="text-left">
+            <h4 class="font-semibold text-lg">100% Deposit Bonus</h4>
+            <p class="text-gray-400 text-sm">
+              Deposit up to $1000 and enjoy a full 100% deposit bonus. This
+              advantage immediately doubles your investment.
+            </p>
+          </div>
+          <img
+            src="/images/Icons/risk-free.png"
+            alt="Bonus"
+            class="w-12 h-12"
+          />
+        </div>
+      </div>
+
+      <!-- Button -->
+      <div class="mt-6">
+        <button
+          class="px-6 py-3 w-full bg-gradient-to-l from-blue-400 to-blue-600 rounded-lg text-white font-semibold hover:from-blue-500 hover:to-blue-700 transition"
+        >
+          Sign Up Now
+        </button>
+      </div>
+    </section>
+    <!-- Wealth Builder section end -->
+
+    <!-- Offer will end start -->
+    <section
+      class="bg-[#0A0F1B] text-white flex flex-col items-center justify-center py-20"
+    >
+      <h2 class="text-lg font-semibold mb-6 text-gray-300">
+        OFFER WILL END IN
+      </h2>
+
+      <div class="flex space-x-6">
+        <!-- Hours -->
+        <div class="relative flex flex-col items-center">
+          <div
+            class="w-24 h-24 rounded-full border-4 border-blue-500 flex items-center justify-center text-2xl font-bold"
+          >
+            <span id="hours">23</span>H
+          </div>
+          <div
+            class="absolute w-28 h-28 border-2 border-blue-500 opacity-40 rounded-full animate-spin"
+          ></div>
+        </div>
+
+        <!-- Minutes -->
+        <div class="relative flex flex-col items-center">
+          <div
+            class="w-24 h-24 rounded-full border-4 border-blue-500 flex items-center justify-center text-2xl font-bold"
+          >
+            <span id="minutes">56</span>M
+          </div>
+          <div
+            class="absolute w-28 h-28 border-2 border-blue-500 opacity-40 rounded-full animate-spin"
+          ></div>
+        </div>
+
+        <!-- Seconds -->
+        <div class="relative flex flex-col items-center">
+          <div
+            class="w-24 h-24 rounded-full border-4 border-blue-500 flex items-center justify-center text-2xl font-bold"
+          >
+            <span id="seconds">12</span>S
+          </div>
+          <div
+            class="absolute w-28 h-28 border-2 border-blue-500 opacity-40 rounded-full animate-spin"
+          ></div>
+        </div>
+      </div>
+    </section>
+    <!-- Offer will end end -->
+
+    <!-- Why bg start -->
+    <section class="bg-[#0A0F1B] text-white py-16 px-6 md:px-16 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">
+        Why Hundreds Trust LTI <br />
+        <span class="text-blue-400">Investments to Grow</span> Their Wealth
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <!-- Automated Trading Card -->
+        <div
+          class="bg-[#062E52] p-6 rounded-lg border border-blue-400 shadow-lg"
+        >
+          <img
+            src="/images/Icons/roundtickicon.png"
+            alt="Trading"
+            class="w-12 h-12 mx-auto mb-3"
+          />
+          <h4 class="text-lg font-semibold">Automated Trading for Beginners</h4>
+          <p class="text-gray-300 text-sm mt-2">
+            No manual trading required — focus on your goals while we do the
+            rest.
+          </p>
+        </div>
+
+        <!-- Guaranteed Results Card -->
+        <div
+          class="bg-[#062E52] p-6 rounded-lg border border-blue-400 shadow-lg"
+        >
+          <img
+            src="/images/Icons/tickicon.png"
+            alt="Guaranteed"
+            class="w-12 h-12 mx-auto mb-3"
+          />
+          <h4 class="text-lg font-semibold">Guaranteed Results</h4>
+          <p class="text-gray-300 text-sm mt-2">
+            Up to 40% growth in 90 days or your year is free.
+          </p>
+        </div>
+
+        <!-- Transparent and Flexible Card -->
+        <div
+          class="bg-[#062E52] p-6 rounded-lg border border-blue-400 shadow-lg"
+        >
+          <img
+            src="/images/Icons/headphoneicon.png"
+            alt="Transparent"
+            class="w-12 h-12 mx-auto mb-3"
+          />
+          <h4 class="text-lg font-semibold">Transparent and Flexible</h4>
+          <p class="text-gray-300 text-sm mt-2">
+            No hidden fees. Pay only after you profit.
+          </p>
+        </div>
+      </div>
+
+      <!-- Support Card -->
+      <div
+        class="mt-6 bg-[#062E52] p-6 rounded-lg border border-blue-400 shadow-lg max-w-5xl mx-auto"
+      >
+        <div class="flex items-center space-x-4">
+          <img
+            src="/images/Icons/lathiicon.png"
+            alt="Support"
+            class="w-12 h-12"
+          />
+          <div class="text-left">
+            <h4 class="text-lg font-semibold">24/7 Support Staff</h4>
+            <p class="text-gray-300 text-sm">
+              Clients have their very own support line accessible both by chat
+              and direct calls. Clients are always supported to ensure they feel
+              confident in the team and their trading positions.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Closing Statement -->
+      <p class="mt-8 text-2xl text-gray-300 max-w-2xl mx-auto">
+        If there was a way to grow your investments effortlessly while
+        reclaiming your time, would you?
+      </p>
+    </section>
+    <!-- Why bg end -->
+
+    <!-- Monthly returns start -->
+    <section class="bg-[#020A1B] text-white py-16 text-center">
+      <h2 class="text-5xl font-semibold">
+        Monthly <span class="text-blue-400">returns</span>
+      </h2>
+      <p class="text-gray-400 mt-2 text-xl">
+        Past performance is not indicative of future results
+      </p>
+
+      <div
+        class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto"
+      >
+        <!-- Stat 1 -->
+        <div class="bg-[#031123] border border-blue-500 rounded-lg p-6">
+          <p class="text-3xl font-bold">4,113%</p>
+          <p class="text-gray-400 text-sm">Total return compound int.</p>
+        </div>
+
+        <!-- Stat 2 -->
+        <div class="bg-[#031123] border border-blue-500 rounded-lg p-6">
+          <p class="text-3xl font-bold">95%</p>
+          <p class="text-gray-400 text-sm">Winning months since 2020</p>
+        </div>
+
+        <!-- Stat 3 -->
+        <div class="bg-[#031123] border border-blue-500 rounded-lg p-6">
+          <p class="text-3xl font-bold">19.8%</p>
+          <p class="text-gray-400 text-sm">Gained last month</p>
+        </div>
+
+        <!-- Stat 4 -->
+        <div class="bg-[#031123] border border-blue-500 rounded-lg p-6">
+          <p class="text-3xl font-bold">79%</p>
+          <p class="text-gray-400 text-sm">Success Shorts/Longs won</p>
+        </div>
+      </div>
+    </section>
+    <!-- Monthly returns end -->
+
+    <!-- Client says start -->
+    <section class="bg-[#020A1B] text-white py-16 text-center">
+      <h2 class="text-3xl font-semibold">
+        What Our <span class="text-blue-400">Clients Say</span>
+      </h2>
+
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Testimonial Card 1 -->
+        <div
+          class="bg-[#031123] border border-blue-500 rounded-lg p-6 text-center"
+        >
+          <div class="flex justify-center">
+            <img
+              src="/images/person3.png"
+              alt="User"
+              class="w-16 h-16 rounded-full border-2 border-blue-400"
+            />
+          </div>
+          <h3 class="mt-4 text-lg font-bold">Alexander Gray</h3>
+          <p class="text-gray-400 text-sm">United States</p>
+          <p class="mt-3 text-gray-300 text-sm">
+            "Using this website I can invest very easily, quickly and simply!"
+          </p>
+        </div>
+
+        <!-- Testimonial Card 2 -->
+        <div
+          class="bg-[#031123] border border-blue-500 rounded-lg p-6 text-center"
+        >
+          <div class="flex justify-center">
+            <img
+              src="/images/person2.png"
+              alt="User"
+              class="w-16 h-16 rounded-full border-2 border-blue-400"
+            />
+          </div>
+          <h3 class="mt-4 text-lg font-bold">Alexander Gray</h3>
+          <p class="text-gray-400 text-sm">United Kingdom</p>
+          <p class="mt-3 text-gray-300 text-sm">
+            "Using this website I can invest very easily, quickly and simply!"
+          </p>
+        </div>
+
+        <!-- Testimonial Card 3 -->
+        <div
+          class="bg-[#031123] border border-blue-500 rounded-lg p-6 text-center"
+        >
+          <div class="flex justify-center">
+            <img
+              src="/images/person1.png"
+              alt="User"
+              class="w-16 h-16 rounded-full border-2 border-blue-400"
+            />
+          </div>
+          <h3 class="mt-4 text-lg font-bold">Alexander Gray</h3>
+          <p class="text-gray-400 text-sm">United States</p>
+          <p class="mt-3 text-gray-300 text-sm">
+            "Using this website I can invest very easily, quickly and simply!"
+          </p>
+        </div>
+      </div>
+
+      <p class="mt-12 text-lg text-gray-300">
+        If there was a way to turn <span class="text-blue-400">$500</span> into
+        consistent, passive income with guaranteed growth, would you?
+      </p>
+    </section>
+    <!-- Client says end -->
+
+    <!-- Real results start -->
+    <section class="text-white py-16 text-center">
+      <h2 class="text-3xl font-semibold">
+        What Our <span class="text-blue-400">Clients Say</span>
+      </h2>
+
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        <!-- Testimonial Card 1 -->
+
+        <!-- Testimonial Card 3 -->
+        <div class="pb-4 text-center">
+          <div class="flex justify-center">
+            <img src="/images/ss1.png" alt="User" class="rounded-md" />
+          </div>
+          <h3 class="mt-4 text-xl font-bold">
+            Include screenshots trading account growth
+          </h3>
+        </div>
+        <!-- Testimonial Card 3 -->
+        <div class="pb-4 text-center">
+          <div class="flex justify-center">
+            <img src="/images/ss2.png" alt="User" class="rounded-md" />
+          </div>
+          <h3 class="mt-4 text-xl font-bold">
+            Include screenshots of trading growth
+          </h3>
+        </div>
+        <!-- Testimonial Card 3 -->
+        <div class="pb-4 text-center">
+          <div class="flex justify-center">
+            <img src="/images/ss3.png" alt="User" class="rounded-md" />
+          </div>
+          <h3 class="mt-4 text-xl font-bold">
+            Include screenshots of trading account
+          </h3>
+        </div>
+        <!-- Testimonial Card 3 -->
+        <div class="pb-4 text-center">
+          <div class="flex justify-center">
+            <img src="/images/ss4.png" alt="User" class="rounded-md" />
+          </div>
+          <h3 class="mt-4 text-xl font-bold">
+            Include screenshots of trading account
+          </h3>
+        </div>
+      </div>
+
+      <p class="mt-12 text-2xl max-w-3xl mx-auto text-gray-300">
+        If there was a way to grow your investments automatically with
+        guaranteed results, would you take the first step?
+      </p>
+    </section>
+    <!-- Real results end -->
+
+    <!-- Your benefits start -->
+    <section class="py-16 px-6 max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-semibold text-white">
+        <span class="text-blue-500">Your benefits</span> with LTI
+      </h2>
+
+      <!-- Benefits Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+        <!-- Card 1 -->
+        <div
+          class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-lg shadow-lg border border-blue-500 hover:scale-105 transition"
+        >
+          <img
+            src="/images/Icons/Automatic.png"
+            alt="Support"
+            class="w-12 h-12 flex items-center justify-center mx-auto mb-4"
+          />
+          <h3 class="text-xl font-bold">Automated Trading</h3>
+          <p class="text-gray-300 mt-2">
+            Our software executes every trade using precise data and is fully
+            automated for optimal results.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-gradient-to-br from-blue-500 to-cyan-400 p-6 rounded-lg shadow-lg hover:scale-105 transition"
+        >
+          <img
+            src="/images/Icons/Flexible.png"
+            alt="Support"
+            class="w-12 h-12 flex items-center justify-center mx-auto mb-4"
+          />
+          <h3 class="text-xl font-bold">Passive Income</h3>
+          <p class="text-gray-700 mt-2">
+            Effortlessly generate consistent passive income with Alchemist™—no
+            action required.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-lg shadow-lg border border-gray-500 hover:scale-105 transition"
+        >
+          <img
+            src="/images/Icons/passive-income.png"
+            alt="Support"
+            class="w-12 h-12 flex items-center justify-center mx-auto mb-4"
+          />
+          <h3 class="text-xl font-bold">Proven Performance</h3>
+          <p class="text-gray-300 mt-2">
+            With a track record spanning 9 years, Alchemist™ offers reliability
+            and confidence.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="bg-gradient-to-br from-blue-500 to-cyan-400 p-6 rounded-lg shadow-lg hover:scale-105 transition"
+        >
+          <img
+            src="/images/Icons/scalling.png"
+            alt="Support"
+            class="w-12 h-12 flex items-center justify-center mx-auto mb-4"
+          />
+          <h3 class="text-xl font-bold">Your Life Back</h3>
+          <p class="text-gray-700 mt-2">
+            Let our software handle your trades, so you can focus on what truly
+            matters in your life.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Your benefits end -->
+
+    <!-- Real time counter -->
+    <script>
+      function startCountdown() {
+        let targetTime = new Date().getTime() + 86400000; // 24 hours from now
+
+        function updateTimer() {
+          let now = new Date().getTime();
+          let difference = targetTime - now;
+
+          let hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+          let minutes = Math.floor((difference / (1000 * 60)) % 60);
+          let seconds = Math.floor((difference / 1000) % 60);
+
+          document.getElementById("hours").innerText = hours
+            .toString()
+            .padStart(2, "0");
+          document.getElementById("minutes").innerText = minutes
+            .toString()
+            .padStart(2, "0");
+          document.getElementById("seconds").innerText = seconds
+            .toString()
+            .padStart(2, "0");
+        }
+
+        setInterval(updateTimer, 1000);
+      }
+
+      startCountdown();
+    </script>
   </body>
 </html>
