@@ -63,7 +63,7 @@
 
     <!-- Offer will end section start -->
     <section
-      class="offer bg-[#000D3A66] text-white px-4 rounded-lg border border-[#1E3A8A] flex items-center justify-between"
+      class="offer py-4 mx-auto max-w-6xl bg-[#000D3A66] my-10 text-white px-6 rounded-lg border border-[#1E3A8A] flex items-center justify-between"
     >
       <!-- Left Side -->
       <div class="flex items-center space-x-4">
@@ -79,19 +79,19 @@
         <p class="text-2xl font-semibold">OFFER WILL END IN</p>
         <div class="flex space-x-2 mt-1">
           <div
-            class="bg-[#0A1F4D] px-3 py-1 rounded-md border border-[#1E3A8A]"
+            class="bg-[#0A1F4D] px-3 py-1 text-2xl font-bold rounded-md border border-[#1E3A8A]"
           >
-            <span class="text-2xl font-bold">23H</span>
+            <span id="hours">23</span>H
           </div>
           <div
-            class="bg-[#0A1F4D] px-3 py-1 rounded-md border border-[#1E3A8A]"
+            class="bg-[#0A1F4D] px-3 py-1 text-2xl font-bold rounded-md border border-[#1E3A8A]"
           >
-            <span class="text-2xl font-bold">20M</span>
+            <span id="minutes">20</span>M
           </div>
           <div
-            class="bg-[#0A1F4D] px-3 py-1 rounded-md border border-[#1E3A8A]"
+            class="bg-[#0A1F4D] px-3 py-1 rounded-md border text-2xl font-bold border-[#1E3A8A]"
           >
-            <span class="text-2xl font-bold">09S</span>
+            <span id="seconds">09</span>S
           </div>
         </div>
       </div>
@@ -558,6 +558,221 @@
       </div>
     </section>
     <!-- Your benefits end -->
+
+    <!-- Start earning start -->
+    <section class="py-16 px-6 max-w-6xl mx-auto text-center">
+      <!-- Heading -->
+      <h2 class="text-3xl md:text-4xl font-semibold">
+        Start Earning in <span class="text-blue-500">3 Easy Steps</span>
+      </h2>
+
+      <!-- Steps Container -->
+      <div
+        class="flex flex-col md:flex-row items-center justify-center gap-6 mt-10"
+      >
+        <!-- Step 1 -->
+        <div
+          class="bg-gray-800 p-6 rounded-lg shadow-lg border border-blue-500 hover:scale-105 transition w-72"
+        >
+          <div class="flex justify-center">
+            <img src="/images/Icons/Signup.png" alt="User" class="rounded-md" />
+          </div>
+          <h3 class="text-xl font-bold">Sign Up & Deposit</h3>
+          <p class="text-gray-300 mt-2">
+            Create an account and deposit a minimum of $500.
+          </p>
+        </div>
+
+        <!-- Arrow -->
+        <div class="hidden md:block text-blue-400 text-3xl">➡️</div>
+
+        <!-- Step 2 -->
+        <div
+          class="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-500 hover:scale-105 transition w-72"
+        >
+          <div class="flex justify-center">
+            <img
+              src="/images/Icons/SitBack.png"
+              alt="User"
+              class="rounded-md"
+            />
+          </div>
+          <h3 class="text-xl font-bold">Sit Back & Relax</h3>
+          <p class="text-gray-300 mt-2">
+            Our automated system trades for you 24/7.
+          </p>
+        </div>
+
+        <!-- Arrow -->
+        <div class="hidden md:block text-blue-400 text-3xl">➡️</div>
+
+        <!-- Step 3 -->
+        <div
+          class="bg-gray-800 p-6 rounded-lg shadow-lg border border-blue-500 hover:scale-105 transition w-72"
+        >
+          <div class="flex justify-center">
+            <img src="/images/Icons/user-2.png" alt="User" class="rounded-md" />
+          </div>
+          <h3 class="text-xl font-bold">Track Your Profits</h3>
+          <p class="text-gray-300 mt-2">
+            Monitor your growth with guaranteed returns.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Start earning end -->
+
+    <!-- support section start -->
+    <section class="py-16 px-6 max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+        <!-- Left Side (Text & Image) -->
+        <div class="space-y-6">
+          <img
+            src="/images/support.png"
+            alt="Headphone"
+            class="w-24 h-24 md:w-32 md:h-32 mx-auto md:mx-0"
+          />
+          <h2 class="text-3xl md:text-4xl font-semibold">
+            Have <span class="text-white">Questions?</span><br />
+            <span class="text-blue-500">Speak to an Expert</span>
+          </h2>
+          <p class="text-gray-300">
+            Get personalized advice from our experts and start your journey to
+            financial growth.
+          </p>
+        </div>
+
+        <!-- Right Side (Form) -->
+        <div
+          class="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-600"
+        >
+          <form class="space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input
+                type="text"
+                placeholder="Full Name"
+                class="w-full p-3 bg-gray-900 text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                class="w-full p-3 bg-gray-900 text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <select
+                class="w-full p-3 bg-gray-900 text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              >
+                <option>Select Available Date</option>
+                <option>Tomorrow</option>
+                <option>Next Week</option>
+              </select>
+              <input
+                type="tel"
+                placeholder="Phone Number"
+                class="w-full p-3 bg-gray-900 text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+            <textarea
+              placeholder="Share Your Message"
+              rows="4"
+              class="w-full p-3 bg-gray-900 text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            ></textarea>
+
+            <button
+              class="w-full bg-blue-500 text-white py-3 rounded-md font-semibold hover:bg-blue-600 transition"
+            >
+              Book Your Free Consultation
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Pricing Section -->
+      <div
+        class="mt-10 bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-600 flex flex-col md:flex-row justify-between items-center"
+      >
+        <div class="text-center md:text-left">
+          <h3 class="text-lg font-semibold text-gray-300">Trial Period</h3>
+          <p class="text-xl text-white font-bold">$0 upfront</p>
+        </div>
+        <div class="text-center md:text-left">
+          <h3 class="text-lg font-semibold text-gray-300">After Trial</h3>
+          <p class="text-xl text-white font-bold">
+            £40/month or 15% profit split after earning £1,000
+          </p>
+        </div>
+        <button
+          class="mt-4 md:mt-0 bg-blue-500 text-white py-3 px-6 rounded-md font-semibold hover:bg-blue-600 transition"
+        >
+          Start Your Free Trial
+        </button>
+      </div>
+    </section>
+    <!-- support section end -->
+
+    <!-- footer start -->
+    <footer class="mx-auto p-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <img src="/images/logo.png" alt="" />
+        <div class="p-6 rounded-lg">
+          <h2 class="text-xl font-semibold mb-4">Navigation</h2>
+          <ul class="space-y-2">
+            <li>
+              <a href="#" class="text-blue-600 hover:underline">Quick Links</a>
+            </li>
+            <li>
+              <a href="#" class="text-blue-600 hover:underline"
+                >Risk-Free Trading</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-blue-600 hover:underline">INVESTMENTS</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-lg">
+          <h2 class="text-xl font-semibold mb-4">Legal</h2>
+          <ul class="space-y-2">
+            <li>
+              <a href="#" class="text-blue-600 hover:underline"
+                >Terms of Service</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-blue-600 hover:underline"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-blue-600 hover:underline"
+                >Risk Disclaimer</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-lg">
+          <h2 class="text-xl font-semibold mb-4">Community</h2>
+          <ul class="space-y-2">
+            <li>
+              <a href="#" class="text-blue-600 hover:underline"
+                >Join Us On Telegram</a
+              >
+            </li>
+            <li>
+              <button
+                class="px-3 bg-blue-500 text-white py-2 rounded-md font-semibold hover:bg-blue-600 transition"
+              >
+                Book Now
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
 
     <!-- Real time counter -->
     <script>
